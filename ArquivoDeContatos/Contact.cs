@@ -23,6 +23,18 @@ namespace ArquivoDeContatos
             };
         }
 
+        public override string ToString()
+        {
+            string phonesString = " ";
+
+            foreach (var phone in PhoneNumbers)
+            {
+                phonesString += phone + " ";
+            }
+
+            return $"{Name},{phonesString},{Email},{ContactAddress}";
+        }
+
         public void AddPhoneNumber(string phone)
         {
             this.PhoneNumbers.Add(new(phone));

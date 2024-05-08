@@ -14,5 +14,10 @@ namespace ArquivoDeContatos
         {
             this.number = number;
         }
+
+        public override string ToString()
+        {
+            return number;
+        }
     }
 }
