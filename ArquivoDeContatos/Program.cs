@@ -171,13 +171,13 @@ namespace ArquivoDeContatos
             Console.Write("Nome da rua: ");
             string street = Console.ReadLine();
 
-            Console.Write("Nome da rua: ");
+            Console.Write("Nome da cidade: ");
             string city = Console.ReadLine();
 
-            Console.Write("Nome da rua: ");
+            Console.Write("Estado: ");
             string state = Console.ReadLine();
 
-            Console.Write("Nome da rua: ");
+            Console.Write("CEP: ");
             string zip = Console.ReadLine();
 
             return new(street, city, state, zip);
@@ -219,13 +219,13 @@ namespace ArquivoDeContatos
                 Console.Write("Nome da rua: ");
                 string street = Console.ReadLine();
 
-                Console.Write("Nome da rua: ");
+                Console.Write("Nome da cidade: ");
                 string city = Console.ReadLine();
 
-                Console.Write("Nome da rua: ");
+                Console.Write("Estado: ");
                 string state = Console.ReadLine();
 
-                Console.Write("Nome da rua: ");
+                Console.Write("CEP: ");
                 string zip = Console.ReadLine();
 
                 contact.ContactAddress = new(street, city, state, zip);

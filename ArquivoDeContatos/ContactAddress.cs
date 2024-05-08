@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ArquivoDeContatos
 {
@@ -19,6 +20,11 @@ namespace ArquivoDeContatos
             this.City = city;
             this.State = state;
             this.Zip = zip;
+        }
+
+        public override string ToString()
+        {
+            return $"{Street} {City} {State} {Zip}";
         }
     }
 }
